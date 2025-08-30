@@ -24,26 +24,30 @@ MyBlog is a full-featured, responsive blog web application built with Python and
 
 To run this project on your local machine, follow these steps:
 
-**1. Clone the repository:**
+# **1. Clone the repository:**
 
 git clone [https://github.com/YOUR_USERNAME/MyBlog.git](https://github.com/YOUR_USERNAME/MyBlog.git)
 cd MyBlog
 
-2. Create and activate a virtual environment:
+# 2. Create and activate a virtual environment:
 
-# For Windows
+For Windows
+
 python -m venv env
+
 .\env\Scripts\activate
 
-# For macOS/Linux
+For macOS/Linux
+
 python3 -m venv env
+
 source env/bin/activate
 
-3. Install the required packages:
+# 3. Install the required packages:
 
 pip install -r requirements.txt
 
-4. Set up the MySQL Database:
+# 4. Set up the MySQL Database:
 
 Create a new database (schema) in MySQL named myblog.
 
@@ -55,7 +59,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:YOUR_PASSWORD@loca
 
 Replace YOUR_PASSWORD with your actual MySQL root password.
 
-5. Create the database tables:
+# 5. Create the database tables:
 
 Open a Python terminal in your project directory.
 
@@ -66,7 +70,7 @@ with app.app_context():
     db.create_all()
 exit()
 
-6. Run the application:
+# 6. Run the application:
 
 python app.py
 
